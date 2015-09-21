@@ -1,0 +1,234 @@
+
+
+body{
+    background: #eee;
+    font-family: Arial;
+    font-size: 16px;
+}
+
+
+a{
+    color: #22bce0;
+}
+
+
+header{
+    background: #343854;
+    color: white;
+    padding: 0.5em;
+    overflow: hidden;
+
+    /* margin: 2em; */
+    position: relative;
+}
+
+header figure{
+    float: left;
+}
+
+header #logo img{
+    border-right: 1px solid white;
+    padding-right: 0.5em;
+    margin-right: 0.5em;
+    width: 52px;
+}
+
+header h1{
+    border: 1px solid red;
+    font-size: 1.2em;
+    font-weight: normal;
+    margin: 0.2em 70px 0 0;
+    /* float: left;  NO PUEDO HACERLO FLOTAR A LA IZQ */
+}
+
+header #avatar{
+    /* float: right; */
+    /* margin-top: -40px; */
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0.5em 0.5em 0 0;
+}
+
+header #avatar img{
+    width: 55px;
+    border-radius: 50%;
+}
+
+
+nav{
+    background: #80bca3;
+    /* padding: 0 0 0.5em; */
+    position: relative;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 1em 0 0;
+}
+
+nav ul li a{
+    color: white;
+    display: block;
+    padding: 0.5em 0;
+    text-decoration: none;
+}
+
+nav ul #publicar_item{
+    position: absolute;
+    top: -0.3em;
+    right: 0;
+}
+
+nav ul #publicar_item a{
+    /* border: 1px solid blue; */
+    background: #22bce0;
+    padding: 0.8em 0.5em;
+    border-radius: 0.5em;
+    font-style: italic;
+    text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
+    /* text-shadow: 1px 1px 3px #802528; */
+    box-shadow: rgba(0,0,0,0.5) 5px 5px 20px;
+
+    /* PARA COLOCAR IMAGEN AL BOTON DE PUBLICAR */
+    background-image: url(firefox_mini.png);
+    background-repeat: no-repeat;
+    background-position: 5px 8px;
+    padding-left: 42px;
+}
+
+
+footer{
+    /* background: rgba(34, 188, 224, 0.7); */
+
+    background: #22bce0;
+    text-align: center;
+    /* color: white; */
+    padding: 1em;
+
+    color: rgba(255, 255, 255, 0.7);
+}
+
+footer p:first-child{
+    margin-bottom: 0;
+}
+
+footer p:last-child{
+    margin-top: 0;
+}
+
+footer p:last-child:before{
+    content: "- ";
+}
+
+footer p:last-child:after{
+    content: " -";
+}
+
+
+#contenido{
+    margin: 1em;
+}
+
+#contenido .item{
+    background: gray;
+    border-bottom: 3px solid #22bce0;
+    overflow: hidden;
+}
+
+#contenido .item .imagen_item{
+    float: left;
+    margin: 0 1em 0 0;
+}
+
+#contenido .item .imagen_item img{
+    width: 96px;
+}
+
+#contenido .item .titulo_item{
+    font-size: 1.2em;
+    font-style: italic;   /* PORQUE AL COLOCAR EN:   #contenido .item .titulo_item a   SE VE DIFERENTE */
+}
+
+#contenido .item .titulo_item a{
+    color: #444;
+    text-decoration: none;
+}
+
+#contenido .item .autor_item{
+    color: #aaa;
+}
+
+
+/*
+#contenido .item .datos_item{
+    text-align: right;
+    margin: 10px 0;
+
+    position: relative;
+}
+
+#contenido .item .datos_item .tag_item{
+    background: #f4502a;
+    text-decoration: none;
+    color: white;
+    padding: 0.2em 0.5em;
+    border-radius: 0.5em;
+
+    position: absolute;
+    top: 0;
+    left: 110px;
+}
+*/
+
+
+#contenido .item .datos_item{
+    text-align: right;
+    margin: 1em 1em 0 0;
+}
+
+#contenido .item .datos_item .fecha_item{
+    color: #aaa;
+}
+
+#contenido .item .datos_item .tag_item{
+    background: #f4502a;
+    text-decoration: none;
+    color: white;
+    padding: 0.2em 0.5em;
+    border-radius: 0.5em;
+    float: left;
+    display: inline-block;
+}
+
+
+
+#contenido .item .votacion{
+    background: white;
+    border-radius: 0 0 0.5em 0.5em;
+    left: 1em;
+    margin-top: 3px;
+    padding: 0.2em 0.5em;
+    position: absolute;
+    top: 100%;
+    width: 95%;
+}
+
+#contenido .item .votacion .up{
+
+}
+
+#contenido .item .votacion .down{
+
+}
+
+#contenido .item .votacion .comentarios_item,
+#contenido .item .votacion .guardar_item{
+    float: right;
+}
